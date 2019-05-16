@@ -1,0 +1,41 @@
+::placeholder {
+    color: #352C63 !important;
+    opacity: 3;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:  #352C63 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:  #352C63 !important;
+    opacity:  3;
+}
+ h1 {
+    text-align: center;
+    color:#01A9DB;
+    font-size: 4em;
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+ #msg {
+    height: 60px;
+}
+ #grid-contatos tbody {
+    cursor: pointer;
+}
+
+body {background-color: #352C63;}
+
+.row{
+    color: #F1F1F3;
+}
+
+img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+}
+
+.nav{
+    color:#01A9DB;
+}

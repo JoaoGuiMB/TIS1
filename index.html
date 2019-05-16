@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business'st</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <script>
+        function valida() {
+            var email = document.getElementById("email").value;
+            var senha = document.getElementById("senha").value;
+            var user_info = { email: "henrique@gmail.com", senha: "senha" };
+
+            if (email == user_info.email && senha == user_info.senha) {
+                location.href = "sistema.html"
+            }
+            else {
+                alert("Usuário ou senha inválido(s).")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <div class="logo-titulo">
+            <h1>Business'st</h1>
+        </div>
+
+        <form action="index.html" method="POST">
+            <p>E-mail:</p>
+            <input type="text" id="email" name="Usuário">
+            <p>Senha:</p>
+            <input type="password" id="senha" name="Senha">
+            <a href=""><br>Esqueceu a senha?</a>
+            <button type="button" id="button-login" onClick="valida()">Entrar</button>
+
+        </form>
+
+    </header>
+    <div class="main-container">
+        <div class="main-texto">
+            <h1>SOFTWARE DE GESTÃO EMPRESARIAL</h1>
+            <h3>Faça a gestão de sua empresa ficar muito mais simples, rápida e eficiente.
+                Com o Business'st você ganha tempo para focar no seu negócio.</h3>
+        </div>
+
+        <div class="cadastro">
+            <div id="cadastro-titulo">
+                <h2>Abra uma conta</h2>
+                <h4>É gratuito</h4>
+            </div>
+            <form class="cadastro-form">
+                <input type="text" placeholder="Nome Completo" name="Nome" id="nome">
+                <input type="text" placeholder="Empresa" name="Sobrenome" id="sobrenome">
+                <input type="email" placeholder="Email" name="email" id="email">
+                <input type="password" placeholder="Senha" name="Senha" id="senha">
+                <h4>Data de nascimento</h4>
+
+                <input type="date">
+
+
+                <input type="submit" value="Inscreva-se" name="Cadastro" id="button-cadastro">
+            </form>
+        </div>
+    </div>
+    <div class="recursos">
+        <div class="recursos-titulo">
+            <h2>VEJA ALGUNS RECURSOS</h2>
+            <h3>Veja algumas das funcionalidades que oferecemos para auxílio na gestão da sua empresa.</h3>
+
+        </div>
+        <!-- Só para ocupar espaço para mais recursos-->
+        <img src="img/sistema.jpg" id="sistema">
+
+
+
+        <div class="recursos-1">
+            <h2>Controle financeiro</h2>
+            <img src="img/financas.png" alt="Financeiro" id="finan-img">
+            <p>Controle financeiro empresarial que conta com inúmeros recursos e rotinas que vão lhe auxiliar no dia a
+                dia de sua empresa para realizar a gestão financeira.</p>
+
+            <h2>Controle de Estoque</h2>
+            <img src="img/estoque.png" alt="Estoque">
+            <p>Controle de estoque completo para sua empresa. Você pode gerenciar produtos, vendas, compras,
+                movimentações.</p>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <center>
+            <br>
+            <hr>
+            <b>Copyright © 2019 Business'st - Todos os direitos reservados</b>
+            <br>
+        </center>
+    </footer>
+
+
+</body>
+
+</html>
